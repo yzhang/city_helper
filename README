@@ -1,0 +1,45 @@
+CityHelper
+==========
+
+CityHelper provides some helpers for user selecting state and city, it only supports states and cities in China at currently.
+
+Install
+=======
+
+Usage
+=======
+
+It's very easy to use:
+
+  state_select :user, :state, options, html_options
+  city_select  :user, :city, options, html_options
+  captital_select :user, :capital_city, options, html_options
+  
+If you'd like city select auto changed after user changing their choice of state, then you can use:
+
+  state_and_city_select :user, :state, :city, 
+                :state => {:include_blank => 'Please select state'}, 
+                :city => {:include_blank => 'Please select City'}
+                          
+You can also use these helpers in FormBuilder:
+
+  form.state_select :state
+  form.city_select :city
+  form.capital_select :city
+  form.state_and_city_select :state, :city
+  
+You can also use them without object:
+
+  state_select_tag :state
+  city_select_tag :city
+  capital_select_tag :city
+  state_and_city_select_tag :state, :city
+
+TODO
+=======
+
+1. support multi country
+2. combines with country_select
+3. define all states and cities in YAML. 
+
+Copyright (c) 2009 Yuanyi Zhang, released under the MIT license
