@@ -153,7 +153,7 @@ module CityHelper
     end
     
     def city_select(object, id, options = {}, html_options = {})
-      self.select object, id, CITIES['北京'], options, html_options
+      self.select object, id, city_choices, options, html_options
     end
     
     def state_select(object, id, options = {}, html_options = {})
