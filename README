@@ -5,6 +5,7 @@ CityHelper provides some helpers for user selecting state and city, it only supp
 
 Install
 =======
+$ script/plugin install git://github.com/yzhang/city_helper.git
 
 Usage
 =======
@@ -38,8 +39,7 @@ You can also use them without object:
 TODO
 =======
 
-1. support multi country
-2. combines with country_select
-3. define all states and cities in YAML. 
+1. support multi country and i18n
+2. combines with country_selec
 
 Copyright (c) 2009 Yuanyi Zhang, released under the MIT license

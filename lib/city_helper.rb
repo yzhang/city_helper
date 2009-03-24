@@ -160,28 +160,35 @@ module CityHelper
       self.select object, id, state_choices, options, html_options
     end
     
-    def script_for_state_and_city_select
+    def script_for_state_and_city_select(object, state_id, city_id)
       script = 'var city_options = {};'
       CITIES.each do |state, cities|
-        script += "city_options['#{state}'] = '';"
-          options_for_select(cities).split("\n").each do |option|
-          script += "city_options['#{state}'] += '#{option}';"
-        end
+        script += "city_options['#{state}'] = ['"
+        script += cities.join("','")
+        script += "'];"
       end
       
-      "<script type='text/javascript'>#{script}</script>"
+      %(<script type='text/javascript'>
+        #{script}
+        function update_city_select(state) {
+          city_select = document.getElementById('#{object}_#{city_id}');
+          city_select.options.length = 0;
+          for(var i=0; i < city_options[state].length; i++) { 
+            city_select.options[i] = new Option(city_options[state][i], city_options[state][i]);
+          }
+        }
+
+      </script>")
     end
     
     def state_and_city_select(object, state_id, city_id, options = {}, html_options = {})
-      state_change_script = "document.getElementById('#{object}_#{city_id}').innerHTML = city_options[this.value];"
-      
       state_options = options[:state] || {}
       state_html_options = html_options[:state] || {}
       city_options = options[:city] || {}
       city_html_options = html_options[:city] || {}
 
-      script_for_state_and_city_select +
-      state_select(object, state_id, state_options, state_html_options.merge(:onchange => state_change_script)) + 
+      script_for_state_and_city_select(object, state_id, city_id) +
+      state_select(object, state_id, state_options, state_html_options.merge(:onchange => "update_city_select(this.value);")) + 
       city_select(object, city_id, city_options, city_html_options)
     end
     
@@ -198,13 +205,11 @@ module CityHelper
     end
     
     def state_and_city_select_tag(state_id, city_id, options = {})
-      state_change_script = "document.getElementById('#{city_id}').innerHTML = city_options[this.value];"
-      
       state_options = options[:state] || {}
       city_options = options[:city] || {}
 
-      script_for_state_and_city_select +
-      state_select_tag(state_id, state_options.merge(:onchange => state_change_script)) + 
+      script_for_state_and_city_select(object, state_id, city_id) +
+      state_select_tag(state_id, state_options.merge(:onchange => "update_city_select(this.value);")) + 
       city_select_tag(city_id, city_options)
     end
   end
