@@ -1,45 +1,66 @@
 CityHelper
 ==========
 
-CityHelper provides some helpers for user selecting state and city, it only supports states and cities in China at currently.
+CityHelper provides you an easy way to add country, state and 
+city select into your app with i18n support and cascading update.
+
+It only support cities in United States, China, Korea and Japan at now,
+but it's very easy to add other countries in.
 
 Install
 =======
+
 $ script/plugin install git://github.com/yzhang/city_helper.git
+
+This will install a cities dir in your config/locales, and a city_helper.rb 
+in your config/initializers to initialize the i18n support, it only support
+English and Simple Chinese at now.
 
 Usage
 =======
 
 It's very easy to use:
 
-  state_select :user, :state, options, html_options
-  city_select  :user, :city, options, html_options
-  captital_select :user, :capital_city, options, html_options
-  
-If you'd like city select auto changed after user changing their choice of state, then you can use:
+country_select(:user, :country, {
+                :only => [:china],            # Specify the countries you like to displayed in select.
+                :update => 'state_select_id', # Specify id of state select which you like to be updated when country changed
+              }, html_options)
+state_select(:user, :state, {
+                :country => :china,           # Specify the default states options.
+                :countries => [:china],       # set this only when you set :update option in country select, 
+                                              # and this should keep save with the :only options in country select.
+                :update => 'city_select_id',  # Specify id of city select which you like to be updated when state changed
+              }, html_options)
+city_select(:user, :city, {
+                :country => :china,           # This is used to set the default city options.
+                :state   => :beijing,         # This is used to set the default city options.
+              }, html_options)
 
-  state_and_city_select :user, :state, :city, 
-                :state => {:include_blank => 'Please select state'}, 
-                :city => {:include_blank => 'Please select City'}
-                          
-You can also use these helpers in FormBuilder:
 
+Here's an example to update state and city select when country or state changes:
+
+country_select(:user, :country, 
+                :only => [:china, :japan, :united_states], 
+                :update => 'state')
+state_select(:user, :state, 
+                :country => :china, 
+                :countries => [:china, :japan, :united_states], 
+                :update => 'city')
+city_select_tag(:user, :city, :country => :china, :state => :beijing)
+
+You can also use them in FormBuilder:
+
+  form.country_select :country
   form.state_select :state
-  form.city_select :city
-  form.capital_select :city
-  form.state_and_city_select :state, :city
-  
+  form.city_select  :city
+
 You can also use them without object:
 
+  form.country_select :country
   state_select_tag :state
   city_select_tag :city
-  capital_select_tag :city
-  state_and_city_select_tag :state, :city
-
-TODO
-=======
-
-1. support multi country and i18n
-2. combines with country_selec
+  
+If you need add more cities and states, you can change the Constants in lib/city_helper.rb, 
+it will be better sending me a pull request.
 
 Copyright (c) 2009 Yuanyi Zhang, released under the MIT license
