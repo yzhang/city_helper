@@ -1,0 +1,668 @@
+zh-CN:
+  countries:
+    united_states: 美国
+    china: 中国
+    japan: 日本
+    korea_republic_of: 韩国
+    afghanistan: Afghanistan
+    aland_islands: Aland Islands
+    albania: Albania
+    algeria: Algeria
+    american_samoa: American Samoa
+    andorra: Andorra
+    angola: Angola
+    anguilla: Anguilla
+    antarctica: Antarctica
+    antigua_and_barbuda: Antigua And Barbuda
+    argentina: Argentina
+    armenia: Armenia
+    aruba: Aruba
+    australia: Australia
+    austria: Austria
+    azerbaijan: Azerbaijan
+    bahamas: Bahamas
+    bahrain: Bahrain
+    bangladesh: Bangladesh
+    barbados: Barbados
+    belarus: Belarus
+    belgium: Belgium
+    belize: Belize
+    benin: Benin
+    bermuda: Bermuda
+    bhutan: Bhutan
+    bolivia: Bolivia
+    bosnia_and_herzegowina: Bosnia and Herzegowina
+    botswana: Botswana
+    bouvet_island: Bouvet Island
+    brazil: Brazil
+    british_indian_ocean_territory: British Indian Ocean Territory
+    brunei_darussalam: Brunei Darussalam
+    bulgaria: Bulgaria
+    burkina_faso: Burkina Faso
+    burundi: Burundi
+    cambodia: Cambodia
+    cameroon: Cameroon
+    canada: Canada
+    cape_verde: Cape Verde
+    cayman_islands: Cayman Islands
+    central_african_republic: Central African Republic
+    chad: Chad
+    chile: Chile
+    christmas_island: Christmas Island
+    cocos_keeling_islands: Cocos (Keeling) Islands
+    colombia: Colombia
+    comoros: Comoros
+    congo: Congo
+    congo_the_democratic_republic_of_the: "Congo, the Democratic Republic of the"
+    cook_islands: Cook Islands
+    costa_rica: Costa Rica
+    cote_d_ivoire: Cote d'Ivoire
+    croatia: Croatia
+    cuba: Cuba
+    cyprus: Cyprus
+    czech_republic: Czech Republic
+    denmark: Denmark
+    djibouti: Djibouti
+    dominica: Dominica
+    dominican_republic: Dominican Republic
+    ecuador: Ecuador
+    egypt: Egypt
+    el_salvador: El Salvador
+    equatorial_guinea: Equatorial Guinea
+    eritrea: Eritrea
+    estonia: Estonia
+    ethiopia: Ethiopia
+    falkland_islands_malvinas: Falkland Islands (Malvinas)
+    faroe_islands: Faroe Islands
+    fiji: Fiji
+    finland: Finland
+    france: France
+    french_guiana: French Guiana
+    french_polynesia: French Polynesia
+    french_southern_territories: French Southern Territories
+    gabon: Gabon
+    gambia: Gambia
+    georgia: Georgia
+    germany: Germany
+    ghana: Ghana
+    gibraltar: Gibraltar
+    greece: Greece
+    greenland: Greenland
+    grenada: Grenada
+    guadeloupe: Guadeloupe
+    guam: Guam
+    guatemala: Guatemala
+    guernsey: Guernsey
+    guinea: Guinea
+    guinea_bissau: Guinea-Bissau
+    guyana: Guyana
+    haiti: Haiti
+    heard_and_mcdonald_islands: Heard and McDonald Islands
+    holy_see_vatican_city_state: Holy See (Vatican City State)
+    honduras: Honduras
+    hong_kong: Hong Kong
+    hungary: Hungary
+    iceland: Iceland
+    india: India
+    indonesia: Indonesia
+    iran_islamic_republic_of: "Iran, Islamic Republic of"
+    iraq: Iraq
+    ireland: Ireland
+    isle_of_man: Isle of Man
+    israel: Israel
+    italy: Italy
+    jamaica: Jamaica
+    jersey: Jersey
+    jordan: Jordan
+    kazakhstan: Kazakhstan
+    kenya: Kenya
+    kiribati: Kiribati
+    korea_democratic_peoples_republic_of: "Korea, Democratic People's Republic of"
+    kuwait: Kuwait
+    kyrgyzstan: Kyrgyzstan
+    lao_peoples_democratic_republic: "Lao People's Democratic Republic"
+    latvia: Latvia
+    lebanon: Lebanon
+    lesotho: Lesotho
+    liberia: Liberia
+    libyan_arab_jamahiriya: Libyan Arab Jamahiriya
+    liechtenstein: Liechtenstein
+    lithuania: Lithuania
+    luxembourg: Luxembourg
+    macao: Macao
+    macedonia_the_former_yugoslav_republic_of: "Macedonia, The Former Yugoslav Republic Of"
+    madagascar: Madagascar
+    malawi: Malawi
+    malaysia: Malaysia
+    maldives: Maldives
+    mali: Mali
+    malta: Malta
+    marshall_islands: Marshall Islands
+    martinique: Martinique
+    mauritania: Mauritania
+    mauritius: Mauritius
+    mayotte: Mayotte
+    mexico: Mexico
+    micronesia_federated_states_of: "Micronesia, Federated States of"
+    moldova_republic_of: "Moldova, Republic of"
+    monaco: Monaco
+    mongolia: Mongolia
+    montenegro: Montenegro
+    montserrat: Montserrat
+    morocco: Morocco
+    mozambique: Mozambique
+    myanmar: Myanmar
+    namibia: Namibia
+    nauru: Nauru
+    nepal: Nepal
+    netherlands: Netherlands
+    netherlands_antilles: Netherlands Antilles
+    new_caledonia: New Caledonia
+    new_zealand: "New Zealand"
+    nicaragua: Nicaragua
+    niger: Niger
+    nigeria: Nigeria
+    niue: Niue
+    norfolk_island: Norfolk Island
+    northern_mariana_islands: Northern Mariana Islands
+    norway: Norway
+    oman: Oman
+    pakistan: Pakistan
+    palau: Palau
+    palestinian_territory_occupied: "Palestinian Territory, Occupied"
+    panama: Panama
+    papua_new_guinea: "Papua New Guinea"
+    paraguay: Paraguay
+    peru: Peru
+    philippines: Philippines
+    pitcairn: Pitcairn
+    poland: Poland
+    portugal: Portugal
+    puerto_rico: Puerto Rico
+    qatar: Qatar
+    reunion: Reunion
+    romania: Romania
+    russian_federation: Russian Federation
+    rwanda: Rwanda
+    saint_barthelemy: Saint Barthelemy
+    saint_helena: Saint Helena
+    saint_kitts_and_nevis: Saint Kitts and Nevis
+    saint_lucia: Saint Lucia
+    saint_pierre_and_miquelon: Saint Pierre and Miquelon
+    saint_vincent_and_the_grenadines: Saint Vincent and the Grenadines
+    samoa: Samoa
+    san_marino: San Marino
+    sao_tome_and_principe: Sao Tome and Principe
+    saudi_arabia: Saudi Arabia
+    senegal: Senegal
+    serbia: Serbia
+    seychelles: Seychelles
+    sierra_leone: Sierra Leone
+    singapore: Singapore
+    slovakia: Slovakia
+    slovenia: Slovenia
+    solomon_islands: Solomon Islands
+    somalia: Somalia 
+    south_africa: South Africa
+    south_georgia_and_the_south_sandwich_islands: South Georgia and the South Sandwich Islands
+    spain: Spain
+    sri_lanka: Sri Lanka
+    sudan: Sudan
+    suriname: Suriname
+    svalbard_and_jan_mayen: Svalbard and Jan Mayen
+    swaziland: Swaziland
+    sweden: Sweden
+    switzerland: Switzerland
+    syrian_arab_republic: Syrian Arab Republic
+    taiwan_province_of_china: "Taiwan, Province of China"
+    tajikistan: Tajikistan
+    tanzania_united_republic_of: "Tanzania, United Republic of"
+    thailand: Thailand
+    timor_leste: Timor-Leste
+    togo: Togo
+    tokelau: Tokelau
+    tonga: Tonga
+    trinidad_and_tobago: Trinidad and Tobago
+    tunisia: Tunisia
+    turkey: Turkey
+    turkmenistan: Turkmenistan
+    turks_and_caicos_islands: Turks and Caicos Islands
+    tuvalu: Tuvalu
+    uganda: Uganda
+    ukraine: Ukraine
+    united_arab_emirates: United Arab Emirates
+    united_kingdom: United Kingdom
+    united_states_minor_outlying_islands: United States Minor Outlying Islands
+    uruguay: Uruguay
+    uzbekistan: Uzbekistan
+    vanuatu: Vanuatu
+    venezuela: Venezuela
+    viet_nam: Viet Nam
+    virgin_islands_british: Virgin Islands, British
+    virgin_islands_us: Virgin Islands, U.S.
+    wallis_and_futuna: Wallis and Futuna
+    western_sahara: Western Sahara
+    yemen: Yemen
+    zambia: Zambia
+    zimbabwe: Zimbabwe
+  states:
+    alabama: 阿拉巴马
+    alaska: 阿拉斯加
+    arizona: 亚利桑那
+    arkansas: 阿肯色
+    california: 加利福尼亚
+    colorado: 科罗拉多
+    connecticut: 康涅狄格
+    delaware: 特拉华
+    florida: 佛罗里达
+    georgia: 佐治亚
+    hawaii: 夏威夷
+    idaho: 爱达荷
+    illinois: 伊利诺斯
+    indiana: 印第安纳
+    iowa: 衣阿华
+    kansas: 堪萨斯
+    kentucky: 肯塔基
+    louisiana: 路易斯桑那
+    maine: 缅因
+    maryland: 马里兰
+    massachusetts: 马萨诸塞
+    michigan: 密歇根
+    minnesota: 明尼苏达
+    mississippi: 密西西比
+    missouri: 密苏里
+    montana: 蒙大拿
+    nebraska: 内布拉斯加
+    nevada: 内华达
+    new_hampshire: 新罕布什尔
+    new_jersey: 新泽西
+    new_mexico: 新墨西哥
+    new_york: 纽约
+    north_carolina: 北卡罗来纳
+    north_dakota: 北达科他
+    ohio: 俄亥俄
+    oklahoma: 俄克拉荷马
+    oregon: 俄勒冈
+    pennsylvania: 宾夕法尼亚
+    rhode_island: 罗德岛
+    south_carolina: 南卡罗来纳
+    south_dakota: 南达科他
+    tennessee: 田纳西
+    texas: 德克萨斯
+    utah: 犹他
+    vermont: 佛蒙特
+    virginia: 弗吉尼亚
+    washington: 华盛顿
+    west_virginia: 西弗吉尼亚
+    wisconsin: 威斯康辛
+    wyoming: 怀俄明
+    
+    japan: 日本
+    korea_republic_of: 韩国
+    
+    beijing: 北京
+    shanghai: 上海
+    tianjin: 天津
+    chongqing: 重庆
+    heilongjiang: 黑龙江
+    jilin: 吉林
+    liaoning: 辽宁
+    inner_mongolia: 内蒙古
+    hebei: 河北
+    sinkiang: 新疆
+    gansu: 甘肃
+    qinghai: 青海
+    shanxi: 陕西
+    ningxia: 宁夏
+    henan: 河南
+    shandong: 山东
+    shaanxi: 陕西
+    anhui: 安徽
+    hubei: 湖北
+    hunan: 湖南
+    jiangsu: 江苏
+    sichuan: 四川
+    guizhou: 贵州
+    yunnan: 云南
+    guangxi: 广西
+    tibet: 西藏
+    zhejiang: 浙江
+    jiangxi: 江西
+    guangdong: 广东
+    fujian: 福建
+    hainan: 海南
+    taiwan: 台湾
+    hunan: 湖南
+    hong_kong: 香港
+    macau: 澳门
+  cities:
+    shenyang: 沈阳
+    dalian: 大连
+    chaoyang: 朝阳
+    fuxin: 阜新
+    tieling: 铁岭
+    fushun: 抚顺
+    benxi: 本溪
+    liaoyang: 辽阳
+    anshan: 鞍山
+    dandong: 丹东
+    yingkou: 营口
+    panjin: 盘锦
+    jinzhou: 锦州
+    huludao: 葫芦岛
+    wuhan: 武汉
+    shiyan: 十堰
+    xiangfan: 襄樊
+    jingmen: 荆门
+    xiaogan: 孝感
+    huanggang: 黄冈
+    ezhou: 鄂州
+    huangshi: 黄石
+    xianning: 咸宁
+    jingzhou: 荆州
+    yichang: 宜昌
+    suizhou: 随州
+    xiamen: 厦门
+    fuzhou: 福州
+    nanping: 南平
+    sanming: 三明
+    putian: 莆田
+    quanzhou: 泉州
+    zhangzhou: 漳州
+    longyan: 龙岩
+    ningde: 宁德
+    shanghai: 上海
+    nanning: 南宁
+    guilin: 桂林
+    liuzhou: 柳州
+    wuzhou: 梧州
+    guigang: 贵港
+    yu4lin: 玉林
+    qinzhou: 钦州
+    beihai: 北海
+    fangchenggang: 防城港
+    chongzuo: 崇左
+    baise: 白色
+    laibin: 来宾
+    hezhou: 贺州
+    taiyuan: 太原
+    datong: 大同
+    shuozhou: 朔州
+    yangquan: 阳泉
+    changzhi: 长治
+    jincheng: 晋城
+    yizhou: 忻州
+    lvliang: 吕梁
+    jinzhong: 晋中
+    linfen: 临汾
+    yuncheng: 运城
+    taipei: 台北
+    kaohsiung: 高雄
+    keelung: 基隆
+    taichung: 台中
+    tainan: 台南
+    hohhot: 呼和浩特
+    baotou: 包头
+    wuhai: 武汉
+    chifeng: 赤峰
+    hulunbeier: 呼伦贝尔
+    tongliao: 通辽
+    wulanchabu: 乌兰察布
+    ordos: 鄂尔多斯
+    bayan_takuji : 巴彦卓尔
+    changsha: 长沙
+    zhangjiajie: 张家界
+    changde: 常德
+    yiyang: 宜昌
+    yueyang: 岳阳
+    zhuzhou: 株洲
+    xiangtan: 湘潭
+    hengyang: 衡阳
+    chenzhou: 郴州
+    yongzhou: 永州
+    shaoyang: 邵阳
+    huaihua: 怀化
+    loudi: 娄底
+    tianjin: 天津
+    lhasa: 拉萨
+    rikaze: 日喀则
+    yinchuan: 银川
+    shizuishan: 石嘴山
+    wuzhong: 吴中
+    zhongwei: 中卫
+    guyuan: 固原
+    haikou: 海口
+    sanya: 三亚
+    hong_kong: 香港
+    nanjing: 南京
+    xuzhou: 徐州
+    lianyungang: 连云港
+    suqian: 宿迁
+    huaian: 淮安
+    yancheng: 盐城
+    yangzhou: 扬州
+    tai4zhou: 泰州
+    nantong: 南通
+    zhenjiang: 镇江
+    changzhou: 常州
+    wuxi: 无锡
+    su1zhou: 苏州
+    shijiazhuang: 石家庄
+    handan: 邯郸
+    tangshan: 唐山
+    baoding: 保定
+    qinhuangdao: 秦皇岛
+    xingtai: 邢台
+    zhangjiakou: 张家口
+    chengde: 常德
+    cangzhou: 沧州
+    langfang: 廊坊
+    hengshui: 衡水
+    chongqing: 重庆
+    hangzhou: 杭州
+    ningbo: 宁波
+    huzhou: 湖州
+    jiaxing: 嘉兴
+    zhoushan: 舟山
+    shaoxing: 绍兴
+    quzhou: 衢州
+    jinhua: 金华
+    tai2zhou: 台州
+    wenzhou: 温州
+    lishui: 丽水
+    zhengzhou: 郑州
+    kaifeng: 开封
+    luoyang: 洛阳
+    pingdingshan: 平顶山
+    anyang: 安阳
+    hebi: 鹤壁
+    xinxiang: 新乡
+    jiaozuo: 焦作
+    puyang: 濮阳
+    xuchang: 许昌
+    luohe: 洛河
+    sanmenxia: 三门峡
+    nanyang: 南阳
+    shangqiu: 商丘
+    zhoukou: 周口
+    zhumadian: 驻马店
+    xinyang: 信阳
+    macau: 澳门
+    urumchi: 乌鲁木齐
+    karamay: 克拉玛依
+    shihezi: 石河子
+    alar: 阿拉尔
+    tumushuke: 图木舒克
+    wujiaqu: 五家渠
+    kashi: 喀什
+    aksu: 阿克苏
+    hetian: 和田
+    turpan: 吐鲁番
+    chengdu: 成都
+    guangyuan: 广元
+    jinyang: 晋阳
+    deyang: 德阳
+    nanchong: 南充
+    guangan: 广安
+    suining: 遂宁
+    neijiang: 内江
+    leshan: 乐山
+    zigong: 自贡
+    luzhou: 泸州
+    yibin: 宜宾
+    panzhihua: 攀枝花
+    bazhong: 巴中
+    dazhou: 达州
+    ziyang: 资阳
+    meishan: 眉山
+    yaan: 雅安
+    xian: 西安
+    yanan: 延安
+    yinchuan: 银川
+    weinan: 渭南
+    xianyang: 咸阳
+    baoji: 宝鸡
+    hanzhong: 汉中
+    yulin: 榆林
+    shangluo: 商洛
+    ankang: 安康
+    jinan: 济南
+    qingdao: 青岛
+    liaocheng: 聊城
+    dezhou: 德州
+    dongying: 东阳
+    zibo: 淄博
+    weifang: 潍坊
+    yantai: 烟台
+    weihai: 威海
+    rizhao: 日照
+    linyi: 临沂
+    zaozhuang: 枣庄
+    jining: 济宁
+    taian: 泰安
+    laiwu: 莱芜
+    binzhou: 滨州
+    heze: 菏泽
+    nanchang: 南昌
+    jiujiang: 九江
+    jingdezhen: 景德镇
+    yingtan: 鹰潭
+    xinyu: 新余
+    pingxiang: 萍乡
+    ganzhou: 赣州
+    shangrao: 上饶
+    fuzhou: 福州
+    yichun: 宜春
+    jian: 吉安
+    harbin: 哈尔滨
+    qiqihar: 齐齐哈尔
+    heihe: 黑河
+    daqing: 大庆
+    yichun: 宜春
+    hegang: 鹤岗
+    jiamusi: 佳木斯
+    shuangyashan: 双鸭山
+    qitaihe: 七台河
+    jixi: 鸡西
+    mudanjiang: 牡丹江
+    suihua: 绥化
+    guiyang: 贵阳
+    liupanshui: 六盘水
+    zunyi: 遵义
+    anshun: 安顺
+    qiandongnan: 黔东南
+    qianxinan: 黔西南
+    lanzhou: 兰州
+    jiayuguan: 嘉峪关
+    jinchang: 金昌
+    baiyin: 白银
+    tianshui: 天水
+    jiuquan: 酒泉
+    zhangye: 张掖
+    wuwei: 武威
+    qingyang: 庆阳
+    pingliang: 平凉
+    dingxi: 定西
+    longnan: 陇南
+    changchun: 长春
+    jilin: 吉林
+    baicheng: 白城
+    songyuan: 松原
+    siping: 四平
+    liaoyuan: 辽源
+    tonghua: 通化
+    baishan: 白山
+    guangzhou: 广州
+    shenzhen: 深圳
+    qingyuan: 清远
+    shaoguan: 韶关
+    heyuan: 河源
+    meizhou: 梅州
+    chaozhou: 潮州
+    shantou: 汕头
+    jieyang: 揭阳
+    shanwei: 汕尾
+    huizhou: 惠州
+    dongguan: 东莞
+    zhuhai: 珠海
+    zhongshan: 中山
+    jiangmen: 江门
+    fushan: 福山
+    zhaoqing: 肇庆
+    yunfu: 云浮
+    yangjiang: 阳江
+    maoming: 茂名
+    zhanjiang: 湛江
+    hefei: 合肥
+    su4zhou: 宿州
+    huaihua: 怀化
+    fuyang: 阜阳
+    bengbu: 蚌埠
+    huainan: 淮南
+    chuzhou: 滁州
+    maanshan: 马鞍山
+    wuhu: 芜湖
+    tongling: 铜陵
+    anqing: 安庆
+    huangshan: 黄山
+    liuan: 六安
+    chaohu: 巢湖
+    chizhou: 池州
+    xuancheng: 宣城
+    haozhou: 毫州
+    beijing: 北京
+    xining: 西宁
+    geermu: 格尔木
+    delingha: 德令哈
+    kunming: 昆明
+    qujing: 曲靖
+    yuxi: 玉溪
+    lijiang: 丽江
+    zhaotong: 昭通
+    simao: 思茅
+    lincang: 临沧
+    baoshan: 保山
+    tokyo: 东京
+    hokkaido: 北海道
+    nara: 奈良
+    osaka: 大阪
+    yokohama: 横滨
+    nagoya: 名古屋
+    kyoto: 京都
+    kobe: 神户
+    kitakyushu: 北九州 
+    sapporo: 札幌
+    kawasaki: 川崎
+    fukuoka: 福冈
+    busan: 釜山
+    daejeon: 大田
+    suwon: 水原
+    seoul: 首尔
+    daegu: 大邱
+    ulsan: 蔚山
+    incheon: 仁川
+    jeonju: 全州
+    gwangju: 光州
+    seogwipo: 西归浦
+  not_applicable: 暂不支持
+  

@@ -1,50 +1,133 @@
 module CityHelper
-  STATES = ['北京', '上海', '天津','重庆', '黑龙江','吉林','辽宁','内蒙古','河北','新疆','甘肃','青海','陕西',
-    '宁夏','河南','山东','山西','安徽','湖北','湖南','江苏','四川','贵州','云南','广西','西藏','浙江','江西','广东',
-    '福建','台湾','海南','香港','澳门']
+  COUNTRIES = [:afghanistan, :aland_islands, :albania, :algeria, :american_samoa, :andorra, :angola,
+          :anguilla, :antarctica, :antigua_and_barbuda, :argentina, :armenia, :aruba, :australia, :austria,
+          :azerbaijan, :bahamas, :bahrain, :bangladesh, :barbados, :belarus, :belgium, :belize, :benin,
+          :bermuda, :bhutan, :bolivia, :bosnia_and_herzegowina, :botswana, :bouvet_island, :brazil,
+          :british_indian_ocean_territory, :brunei_darussalam, :bulgaria, :burkina_faso, :burundi, :cambodia,
+          :cameroon, :canada, :cape_verde, :cayman_islands, :central_african_republic, :chad, :chile, :china,
+          :christmas_island, :cocos_keeling_islands, :colombia, :comoros, :congo,
+          :congo_the_democratic_republic_of_the, :cook_islands, :costa_rica, :cote_d_ivoire, :croatia, :cuba,
+          :cyprus, :czech_republic, :denmark, :djibouti, :dominica, :dominican_republic, :ecuador, :egypt,
+          :el_salvador, :equatorial_guinea, :eritrea, :estonia, :ethiopia, :falkland_islands_malvinas,
+          :faroe_islands, :fiji, :finland, :france, :french_guiana, :french_polynesia,
+          :french_southern_territories, :gabon, :gambia, :georgia, :germany, :ghana, :gibraltar, :greece, :greenland, :grenada, 
+          :guadeloupe, :guam, :guatemala, :guernsey, :guinea,
+          :guinea_bissau, :guyana, :haiti, :heard_and_mcdonald_islands, :holy_see_vatican_city_state,
+          :honduras, :hong_kong, :hungary, :iceland, :india, :indonesia, :iran_islamic_republic_of, :iraq,
+          :ireland, :isle_of_man, :israel, :italy, :jamaica, :japan, :jersey, :jordan, :kazakhstan, :kenya,
+          :kiribati, :korea_democratic_peoples_republic_of, :korea_republic_of, :kuwait, :kyrgyzstan,
+          :lao_peoples_democratic_republic, :latvia, :lebanon, :lesotho, :liberia, :libyan_arab_jamahiriya,
+          :liechtenstein, :lithuania, :luxembourg, :macao, :macedonia_the_former_yugoslav_republic_of,
+          :madagascar, :malawi, :malaysia, :maldives, :mali, :malta, :marshall_islands, :martinique,
+          :mauritania, :mauritius, :mayotte, :mexico, :micronesia_federated_states_of, :moldova_republic_of,
+          :monaco, :mongolia, :montenegro, :montserrat, :morocco, :mozambique, :myanmar, :namibia, :nauru,
+          :nepal, :netherlands, :netherlands_antilles, :new_caledonia, :new_zealand, :nicaragua, :niger,
+          :nigeria, :niue, :norfolk_island, :northern_mariana_islands, :norway, :oman, :pakistan, :palau,
+          :palestinian_territory_occupied, :panama, :papua_new_guinea, :paraguay, :peru, :philippines,
+          :pitcairn, :poland, :portugal, :puerto_rico, :qatar, :reunion, :romania, :russian_federation,
+          :rwanda, :saint_barthelemy, :saint_helena, :saint_kitts_and_nevis, :saint_lucia,
+          :saint_pierre_and_miquelon, :saint_vincent_and_the_grenadines, :samoa, :san_marino,
+          :sao_tome_and_principe, :saudi_arabia, :senegal, :serbia, :seychelles, :sierra_leone, :singapore,
+          :slovakia, :slovenia, :solomon_islands, :somalia, :south_africa,
+          :south_georgia_and_the_south_sandwich_islands, :spain, :sri_lanka, :sudan, :suriname,
+          :svalbard_and_jan_mayen, :swaziland, :sweden, :switzerland, :syrian_arab_republic,
+          :taiwan_province_of_china, :tajikistan, :tanzania_united_republic_of, :thailand, :timor_leste,
+          :togo, :tokelau, :tonga, :trinidad_and_tobago, :tunisia, :turkey, :turkmenistan,
+          :turks_and_caicos_islands, :tuvalu, :uganda, :ukraine, :united_arab_emirates, :united_kingdom,
+          :united_states, :united_states_minor_outlying_islands, :uruguay, :uzbekistan, :vanuatu, :venezuela,
+          :viet_nam, :virgin_islands_british, :virgin_islands_us, :wallis_and_futuna, :western_sahara,
+          :yemen, :zambia, :zimbabwe]
   
-  CAPITALS = ['上海','北京','天津','重庆','哈尔滨','长春','沈阳','呼和浩特','石家庄','乌鲁木齐','兰州','西宁',
-    '西安','银川','郑州','济南','太原','合肥','武汉','长沙','南京','成都','贵阳','昆明','南宁','拉萨','杭州',
-    '南昌','广州','福州','台北','海口','香港','澳门']
+  STATES = {
+    :united_states => [:alabama, :alaska, :arizona, :arkansas,
+        :california, :colorado, :connecticut, 
+        :delaware, :florida, :georgia, :hawaii, :idaho,
+        :illinois, :indiana, :iowa, :kansas,
+        :kentucky, :louisiana, :maine, :maryland,
+        :massachusetts, :michigan, :minnesota, :mississippi,
+        :missouri, :montana, :nebraska, :nevada,
+        :new_hampshire, :new_jersey, :new_mexico,
+        :new_york, :north_carolina, :north_dakota,
+        :ohio, :oklahoma, :oregon, :pennsylvania,
+        :rhode_island, :south_carolina, :south_dakota,
+        :tennessee, :texas, :utah, :vermont, :virginia,
+        :washington, :west_virginia, :wisconsin, :wyoming],
+    :china => [:beijing, :shanghai, :tianjin, :chongqing, :heilongjiang, :jilin, :liaoning, :inner_mongolia, :hebei, :sinkiang,
+        :gansu, :qinghai, :shanxi, :ningxia, :henan, :shandong, :shanxi, :anhui, :hubei, :hunan, :jiangsu, :sichuan,
+        :guizhou, :yunnan, :guangxi, :tibet, :zhejiang, :jiangxi, :guangdong, :fujian, :taiwan, :hunan, :hong_kong, :macau],
+    :japan => [:japan],
+    :korea_republic_of => [:korea_republic_of],
+  }
+  
+  CAPITALS = {
+    :united_states => [:not_applicable],
+    :korea_republic_of => [:not_applicable],
+    :japan => [:not_applicable],
+    :china => [:beijing, :shanghai, :tianjin, :chongqing, :harbin, :changchun, :shenyang, :hohhot, :shijiazhuang, :urumchi,
+      :lanzhou, :xining, :xian, :yinchuan, :zhengzhou, :jinan, :taiyuan, :hefei, :wuhan, :changsha, :nanjing, :chengdu,
+      :guiyang, :kunming, :nanning, :lhasa, :hangzhou, :nanchang, :guangzhou, :fuzhou, :taipei, :haikou, :hong_kong, :macau, :haikou]
+  }
   
   CITIES = {
-    '安徽' => ['合肥', '宿州', '淮北', '阜阳', '蚌埠', '淮南', '滁州', '马鞍山', '芜湖', '铜陵', '安庆', '黄山', '六安', '巢湖', '池州', '宣城', '亳州'],
-    '福建' => ['厦门', '福州', '南平', '三明', '莆田', '泉州', '漳州', '龙岩', '宁德'],
-    '甘肃' => ['兰州', '嘉峪关', '金昌', '白银', '天水', '酒泉', '张掖', '武威', '庆阳', '平凉', '定西', '陇南'],
-    '广东' => ['广州', '深圳', '清远', '韶关', '河源','梅州','潮州','汕头','揭阳','汕尾','惠州','东莞','珠海','中山','江门','佛山','肇庆','云浮','阳江','茂名','湛江'],
-    '贵州' => ['贵阳', '六盘水', '遵义', '安顺'],
-    '河北' => ['石家庄','邯郸','唐山','保定','秦皇岛','邢台','张家口','承德','沧州','廊坊','衡水'],
-    '黑龙江' => ['哈尔滨', '齐齐哈尔','黑河','大庆','伊春','鹤岗','佳木斯','双鸭山','七台河','鸡西','牡丹江','绥化'],
-    '河南' => ['郑州','开封','洛阳','平顶山','安阳','鹤壁','新乡','焦作','濮阳','许昌','漯河','三门峡','南阳', '商丘','周口','驻马店','信阳'],
-    '湖北' => ['武汉', '十堰', '襄樊','荆门','孝感','黄冈','鄂州','黄石','咸宁','荆州','宜昌','随州'],
-    '湖南' => ['长沙', '张家界','常德','益阳','岳阳','株洲','湘潭','衡阳','郴州','永州','邵阳','怀化','娄底'],
-    '吉林' => ['长春', '吉林市','白城','松原','四平','辽源','通化','白山'],
-    '江西' => ['南昌','九江','景德镇','鹰潭','新余','萍乡','赣州','上饶','抚州','宜春','吉安'],
-    '江苏' => ['南京', '徐州','连云港','宿迁','淮安','盐城','扬州','泰州','南通','镇江','常州','无锡','苏州'],
-    '辽宁' => ['沈阳','大连', '朝阳','阜新','铁岭','抚顺','本溪','辽阳','鞍山','丹东','营口','盘锦','锦州','葫芦岛'],
-    '山东' => ['济南','青岛', '聊城','德州','东营','淄博','潍坊','烟台','威海','日照', '临沂','枣庄','济宁','泰安','莱芜','滨州','菏泽'],
-    '陕西' => ['西安', '延安','铜川','渭南','咸阳','宝鸡','汉中','榆林','商洛','安康'],
-    '山西' => ['太原','大同','朔州','阳泉','长治','晋城','忻州','吕梁','晋中','临汾','运城'],
-    '四川' => ['成都','广元','绵阳','德阳','南充','广安','遂宁','内江','乐山','自贡','泸州','宜宾','攀枝花','巴中','达州','资阳','眉山','雅安'],
-    '云南' => ['昆明','曲靖','玉溪','丽江','昭通','思茅','临沧','保山'],
-    '浙江' => ['杭州','宁波','湖州','嘉兴','舟山','绍兴','衢州','金华','台州','温州','丽水'],
-    '青海' => ['西宁', '格尔木','德令哈'],
-    '广西' => ['南宁','桂林','柳州','梧州','贵港','玉林','钦州','北海','防城港','崇左','百色','河池','来宾','贺州'],
-    '内蒙古' => ['呼和浩特','包头','乌海','赤峰','呼伦贝尔','通辽','乌兰察布','鄂尔多斯','巴彦淖尔'],
-    '宁夏' => ['银川','石嘴山','吴忠','中卫','固原'],
-    '西藏' => ['拉萨', '日喀则'],
-    '新疆' => ['乌鲁木齐','克拉玛依','石河子','阿拉尔','图木舒克','五家渠','喀什','阿克苏','和田','吐鲁番'],
-    '台湾' => ['台北', '高雄', '基隆', '台中', '台南'],
-    '香港' => ['香港'],
-    '北京' => ['北京'],
-    '重庆' => ['重庆'],
-    '上海' => ['上海'],
-    '天津' => ['天津'],
-    '澳门' => ['澳门'],
-    '海南' => ['海口', '三亚']
+    :japan => {:japan => [:tokyo, :hokkaido, :nara, :osaka, :yokohama, :nagoya,
+        :kyoto, :kobe, :kitakyushu, :sapporo, :kawasaki, :fukuoka]},
+    :korea_republic_of => {:korea_republic_of => [:busan, :daejeon, :suwon, :seoul, :daegu,
+        :ulsan, :incheon, :jeonju, :gwangju, :seogwipo]},
+    :china => {
+      :anhui => [:hefei, :su4zhou, :huaihua, :fuyang, :bengbu, :huainan, :chuzhou, :maanshan, 
+        :wuhu, :tongling, :anqing, :huangshan, :liuan, :chaohu, :chizhou, :xuancheng, :haozhou],
+      :fujian => [:xiamen, :fuzhou, :nanping, :sanming, :putian, :quanzhou, :zhangzhou, :longyan, :ningde],
+      :gansu => [:lanzhou, :jiayuguan, :jinchang, :baiyin, :tianshui, :jiuquan, :zhangye, :wuwei, 
+        :qingyang, :pingliang, :dingxi, :longnan],
+      :guangdong => [:guangzhou, :shenzhen, :qingyuan, :shaoguan, :heyuan, :meizhou, :chaozhou, :shantou, :jieyang, :shanwei, 
+        :huizhou, :dongguan, :zhuhai, :zhongshan, :jiangmen, :fushan, :zhaoqing, :yunfu, :yangjiang, :maoming, :zhanjiang],
+      :guizhou => [:guiyang, :liupanshui, :zunyi, :anshun, :qiandongnan, :qianxinan],
+      :hebei => [:shijiazhuang, :handan, :tangshan, :baoding, :qinhuangdao, :xingtai, :zhangjiakou, 
+        :chengde, :cangzhou, :langfang, :hengshui],
+      :heilongjiang => [:harbin, :qiqihar, :heihe, :daqing, :yichun, :hegang, :jiamusi, :shuangyashan, 
+        :qitaihe, :jixi, :mudanjiang, :suihua],
+      :henan => [:zhengzhou, :kaifeng, :luoyang, :pingdingshan, :anyang, :hebi, :xinxiang, :jiaozuo, 
+        :puyang, :xuchang, :luohe, :sanmenxia, :nanyang, :shangqiu, :zhoukou, :zhumadian, :xinyang],
+      :hubei => [:wuhan, :shiyan, :xiangfan, :jingmen, :xiaogan, :huanggang, :ezhou, :huangshi, :xianning, :jingzhou, :yichang, :suizhou],
+      :hunan => [:changsha, :zhangjiajie, :changde, :yiyang, :yueyang, :zhuzhou, :xiangtan, :hengyang, :chenzhou, 
+        :yongzhou, :shaoyang, :huaihua, :loudi],
+      :jilin => [:changchun, :jilin, :baicheng, :songyuan, :siping, :liaoyuan, :tonghua, :baishan],
+      :jiangxi => [:nanchang, :jiujiang, :jingdezhen, :yingtan, :xinyu, :pingxiang, :ganzhou, :shangrao, :fuzhou, :yichun, :jian],
+      :jiangsu => [:nanjing, :xuzhou, :lianyungang, :suqian, :huaian, :yancheng, :yangzhou, :tai4zhou, :nantong, :zhenjiang, :changzhou,
+          :wuxi, :su1zhou],
+      :liaoning => [:shenyang, :dalian, :chaoyang, :fuxin, :tieling, :fushun, :benxi, :liaoyang, :anshan, :dandong, 
+        :yingkou, :panjin, :jinzhou, :huludao],
+      :shandong => [:jinan, :qingdao, :liaocheng, :dezhou, :dongying, :zibo, :weifang, :yantai, :weihai, :rizhao, :linyi, :zaozhuang,
+          :jining, :taian, :laiwu, :binzhou, :heze],
+      :shaanxi => [:xian, :yanan, :yinchuan, :weinan, :xianyang, :baoji, :hanzhong, :yulin, :shangluo, :ankang],
+      :shanxi => [:taiyuan, :datong, :shuozhou, :yangquan, :changzhi, :jincheng, :yizhou, :lvliang, :jinzhong, :linfen, :yuncheng],
+      :sichuan => [:chengdu, :guangyuan, :jinyang, :deyang, :nanchong, :guangan, :suining, :neijiang, :leshan, :zigong, :luzhou, :yibin,
+          :panzhihua, :bazhong, :dazhou, :ziyang, :meishan, :yaan],
+      :yunnan => [:kunming, :qujing, :yuxi, :lijiang, :zhaotong, :simao, :lincang, :baoshan],
+      :zhejiang => [:hangzhou, :ningbo, :huzhou, :jiaxing, :zhoushan, :shaoxing, :quzhou, :jinhua, :tai2zhou, :wenzhou, :lishui],
+      :qinghai => [:xining, :geermu, :delingha],
+      :guangxi => [:nanning, :guilin, :liuzhou, :wuzhou, :guigang, :yulin, :qinzhou, :beihai, :fangchenggang, 
+        :chongzuo, :baise, :laibin, :hezhou],
+      :inner_mongolia => [:hohhot, :baotou, :wuhai, :chifeng, :hulunbeier, :tongliao, :wulanchabu, :ordos, :bayan_takuji],
+      :ningxia => [:yinchuan, :shizuishan, :wuzhong, :zhongwei, :guyuan],
+      :tibet => [:lhasa, :rikaze],
+      :sinkiang => [:urumchi, :karamay, :shihezi, :alar, :tumushuke, :wujiaqu, :kashi, :aksu, :hetian, :turpan],
+      :taiwan => [:taipei, :kaohsiung, :keelung, :taichung, :tainan],
+      :hong_kong => [:hong_kong],
+      :beijing => [:beijing],
+      :chongqing => [:chongqing],
+      :shanghai => [:shanghai],
+      :tianjin => [:tianjin],
+      :macau => [:macau],
+      :hainan => [:haikou, :sanya]
+    }
   }
   
   module FormBuilder
+    def country_select(id, options = {}, html_options = {})
+      @template.country_select @object_name, id, options, html_options
+    end
+    
     def capital_select(id, options = {}, html_options = {})
       @template.capital_select @object_name, id, options, html_options
     end
@@ -56,87 +139,159 @@ module CityHelper
     def state_select(id, options = {}, html_options = {})
       @template.state_select @object_name, id, options, html_options
     end
-    
-    def state_and_city_select(state_id, city_id, options = {}, html_options = {})
-      @template.state_and_city_select @object_name, state_id, city_id, options, html_options
-    end
   end
   
   module ViewHelper
-    def capital_choices
-      CAPITALS
+    # def capital_choices(country)
+    #   CAPITALS[country].map {|c| [t(c, :scope => 'cities'), c]}
+    # end
+    
+    def country_options(options)
+      only = options[:only]
+      countries = COUNTRIES
+      countries.reject! {|c| !only.include?(c)} if only && only.is_a?(Array) && !only.empty?
+      countries.map {|c| [t(c, :scope => 'countries'), c]}
     end
     
-    def city_choices
-      CITIES.values.flatten
-    end
-    
-    def state_choices
-      STATES
-    end
-    
-    def capital_select(object, id, options = {}, html_options = {})
-      self.select object, id, capital_choices, options, html_options
-    end
-    
-    def city_select(object, id, options = {}, html_options = {})
-      self.select object, id, city_choices, options, html_options
-    end
-    
-    def state_select(object, id, options = {}, html_options = {})
-      self.select object, id, state_choices, options, html_options
-    end
-    
-    def script_for_state_and_city_select(object, state_id, city_id)
-      script = 'var city_options = {};'
-      CITIES.each do |state, cities|
-        script += "city_options['#{state}'] = ['"
-        script += cities.join("','")
-        script += "'];"
+    def script_for_country(countries, update)
+      script = %(<script type='text/javascript'>
+        var state_options = {};)
+      
+      states = STATES.reject {|c, s| !countries.include?(c)}
+      states.each do |country, states|
+        script += "state_options['#{country}'] = ["
+        script += states.map{|s| "['#{t(s, :scope => 'states')}','#{s}']"}.join(",")
+        script += "];"
       end
       
+      script += %(
+        function country_updated(country) {
+          state_select = document.getElementById('#{update}');
+          state_select.options.length = 0;
+          if(typeof(state_options[country]) == 'undefined') {
+            state_select.options[0] = new Option('#{t(:not_applicable)}', 'not_applicable');
+          } else {
+            for(var i=0; i < state_options[country].length; i++) { 
+              state_select.options[i] = new Option(state_options[country][i][0], state_options[country][i][1]);
+            }
+          }
+          if(typeof(state_updated) != 'undefined') {
+            state_updated(state_select.options[0].value);
+          }
+        }
+      </script>)
+      script
+    end
+    
+    def country_select(object, id, options = {}, html_options = {})
+      self.country_select_tag "#{object}_#{id}", options.merge(html_options)
+    end
+    
+    def country_select_tag(id, options)
+      only = options.delete(:only)
+      update = options.delete(:update)
+      
+      html = ''
+      options_for_country = country_options(:only => only)
+      countries = options_for_country.map {|t, c| c}
+      
+      if !update.blank?
+        html += script_for_country(countries, update) 
+        options[:onchange] = 'country_updated(this.value);'
+      end
+      
+      html += self.select_tag id, options_for_select(options_for_country), options
+      html += %| <script type='text/javascript'>
+      $(document).ready(function(){
+        country_updated($('##{id}').val());
+      });
+      </script>
+      |
+      html
+    end
+    
+    def state_options(country)
+      country = :china if country.blank?
+      STATES[country].map {|c| [t(c, :scope => 'states'), c]}
+    end
+    
+    def script_for_state(countries, update)
+      script = 'var city_options = {};'
+      CITIES.each do |c, states|
+        next unless countries.include?(c)
+        states.each do |state, cities|
+          script += "city_options['#{state}'] = ["
+          script += cities.map{|c| "['#{t(c, :scope => 'cities')}','#{c}']"}.join(",")
+          script += "];"
+        end
+      end
+
       %(<script type='text/javascript'>
         #{script}
-        function update_city_select(state) {
-          city_select = document.getElementById('#{object}_#{city_id}');
+        function state_updated(state) {
+          city_select = document.getElementById('#{update}');
           city_select.options.length = 0;
-          for(var i=0; i < city_options[state].length; i++) { 
-            city_select.options[i] = new Option(city_options[state][i], city_options[state][i]);
+          if(typeof(city_options[state]) == 'undefined') {
+            city_select.options[0] = new Option('#{t(:not_applicable)}', 'not_applicable');
+          } else {
+            for(var i=0; i < city_options[state].length; i++) { 
+              city_select.options[i] = new Option(city_options[state][i][0], city_options[state][i][1]);
+            }
           }
         }
       </script>)
     end
     
-    def state_and_city_select(object, state_id, city_id, options = {}, html_options = {})
-      state_options = options[:state] || {}
-      state_html_options = html_options[:state] || {}
-      city_options = options[:city] || {}
-      city_html_options = html_options[:city] || {}
-
-      script_for_state_and_city_select(object, state_id, city_id) +
-      state_select(object, state_id, state_options, state_html_options.merge(:onchange => "update_city_select(this.value);")) + 
-      city_select(object, city_id, city_options, city_html_options)
-    end
-    
-    def capital_select_tag(id, options = {})
-      self.select_tag id, options_for_select(capital_choices), options
-    end
-    
-    def city_select_tag(id, options = {})
-      self.select_tag id, options_for_select(CITIES['北京']), options
+    def state_select(object, id, options = {}, html_options = {})
+      self.state_select_tag "#{object}_#{id}", options.merge(html_options)
     end
     
     def state_select_tag(id, options = {})
-      self.select_tag id, options_for_select(state_choices), options
+      country = options.delete(:country)
+      countries = options.delete(:countries)
+      countries = [:china] if countries.blank?
+      update = options.delete(:update)
+      
+      html = ''
+      
+      
+      if !update.blank?
+        html += script_for_state(countries, update) 
+        options[:onchange] = 'state_updated(this.value);'
+      end
+      
+      html += self.select_tag id, options_for_select(state_options(country)), options
+      html += %| <script type='text/javascript'>
+      $(document).ready(function(){
+        state_updated($('##{id}').val());
+      });
+      </script>
+      |
+      html
     end
     
-    def state_and_city_select_tag(state_id, city_id, options = {})
-      state_options = options[:state] || {}
-      city_options = options[:city] || {}
-
-      script_for_state_and_city_select(object, state_id, city_id) +
-      state_select_tag(state_id, state_options.merge(:onchange => "update_city_select(this.value);")) + 
-      city_select_tag(city_id, city_options)
+    def city_options(country, state)
+      if state.nil?
+        cities = {}
+        CITIES[country].each do |k, v|
+          cities[t(k, :scope => 'states')] = v.map {|c| [t(c, :scope => 'cities'), c]}
+        end
+        grouped_options_for_select(cities)
+      else
+        CITIES[country][state].map {|c| [t(c, :scope => 'cities'), c]}
+      end
+    end
+    
+    def city_select(object, id, options = {}, html_options = {})
+      country = options.delete(:country) || :china
+      state   = options.delete(:state)
+      self.select object, id, city_options(country, state), options, html_options
+    end
+    
+    def city_select_tag(id, options = {})
+      country = options.delete(:country) || :china
+      state   = options.delete(:state)      
+      self.select_tag id, options_for_select(city_options(country, state)), options
     end
   end
 end
