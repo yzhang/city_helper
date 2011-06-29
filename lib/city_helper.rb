@@ -207,6 +207,7 @@ module CityHelper
       });
       </script>
       |
+      html = html.html_safe if html.respond_to?(:html_safe)
       html
     end
     
@@ -267,6 +268,7 @@ module CityHelper
       });
       </script>
       |
+      html = html.html_safe if html.respond_to?(:html_safe)
       html
     end
     
